@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Style applies first</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       #s1
+       {
+        color: aquamarine;
+       }
+       .s2
+       {
+        color: red;
+       }
+       h2{
+        color: burlywood;
+       }
+       
+       
+    </style>
+
+    <!-- 
+        In nutshell, Inline style applied first.
+        Id styling. ==> class style ==> element style  ==> External style
+     -->
+</head>
+<body>
+    <h1>This is the demo for style application</h1>
+    <h2 id="s1" class="s2" style="color: cornflowerblue;" >
+        Lorem ipsum dolor sit amet.
+    </h2>
+</body>
+</html>
