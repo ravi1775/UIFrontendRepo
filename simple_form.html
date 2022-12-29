@@ -12,7 +12,7 @@
             max-width: 30%;
             height: 500px;
             border: 0.5px solid black;
-            background-color: whitesmoke;
+            background-color: rgb(92, 91, 91);
             margin: 5% auto;
             box-shadow: 5px 5px 5px rgba(52, 45, 25, 0.5);
             display: flex;
@@ -86,15 +86,23 @@
             height: 40px;
             font-size: 20px;
         }
-        select{
-            width: 100%;
+       .input_field select{
+        outline: none;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
         }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">
-            <h1>Sign Up</h1>
+            <h1>Contact Us</h1>
         </div>
         <div class="component">
             <form action="">
@@ -122,10 +130,7 @@
                     <option value="">Japan</option>
                     <option value="">Canada</option>
                 </select>
-            </div>
-            <div class="bottom">
-                <p>already member ?</p><span> Login in </span>
-            </div>
+            </div><br><br>
            
             <div class="actionbutt">
                 <button type="Submit">Submit</button>
