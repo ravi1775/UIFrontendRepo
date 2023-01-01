@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&family=Chivo+Mono:wght@300&family=Courgette&family=Ropa+Sans:ital@1&display=swap');
+        .container
+        {
+            max-width: 30%;
+            height: 500px;
+            border: 0.5px solid black;
+            background-color: rgb(92, 91, 91);
+            margin: 5% auto;
+            box-shadow: 5px 5px 5px rgba(52, 45, 25, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+        }
+        .title  
+        {
+            /* border: 1px solid black; */
+            width: 200px;
+            margin-bottom: 10px;
+            color: rgba(56, 78, 98, 1);
+            text-align: center;
+        }
+        .component
+        {
+            width:100%;
+            /* border: 1px solid red; */
+            align-self: flex-start;
+            
+        }
+        .component .input_field
+        {
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .component .input_field input
+        {
+            width: 60%;
+           
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            box-shadow: 1px 1px 2px rgb(65, 75, 45);
+        }
+        .component .input_field label
+        {
+            font-size: 20px;
+            font-family:Chivo;
+            padding-top: 5px;
+        }
+        .component .bottom
+        {
+            width: 100%;
+            display: flex;
+            padding: 0px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .component .bottom span
+        {
+            color: blue;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .component .actionbutt
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        .component .actionbutt button
+        {
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+        }
+       .input_field select{
+        outline: none;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="component">
+            <form action="">
+            <div class="input_field">
+                <label for="first name">First Name</label>
+                <input type="text">
+            </div>
+            <div class="input_field">
+                <label for="lastname">Last Name</label>
+                <input type="text">
+            </div>
+            <div class="input_field">
+                <label for="email">Email</label>
+                <input type="email">
+            </div>
+            <div class="input_field">
+                <label for="phonenumber">PhoneNumber</label>
+                <input type="number">
+            </div>
+            <div class="input_field">
+                <label for="phonenumber">Country</label>
+                <select name="" id="">
+                    <option value="">America</option>
+                    <option value="">India</option>
+                    <option value="">Japan</option>
+                    <option value="">Canada</option>
+                </select>
+            </div><br><br>
+           
+            <div class="actionbutt">
+                <button type="Submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+           
+        </form>
+        </div>
+    </div>
+</body>
+</html>
