@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment by Amit</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<h1> Sign up here</h1>
+<body>
+<fieldset>
+     <form name="myform">
+    <label for="First Name"> First Name:</label> <span> </span> <input type="text" minlength="4" maxlength="8" pattern="[a-z]{4,8}" required>
+    <pre></pre>
+    <label for="Last Name"> Last Name:</label> <span> </span> <input type="text" minlength="4" maxlength="8" pattern="[a-z]{4,8}" required>
+    <pre></pre>
+    <label for="Email"> Email:</label> &nbsp&nbsp&nbsp&nbsp&nbsp<span> </span> <input type="email" id="email"
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="20" required>
+    <pre></pre>
+    <label for="Telephone"> Telephone:</label> <span> </span> <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+    <pre></pre>
+
+    <label for="Country">Country:</label>   
+    <select name="country" id="country">
+        <option value="India">India</option> 
+        <option value="America">America</option> 
+        <option value="Japan">Japan</option> 
+        <option value="China">China</option> 
+        
+    </select>
+    <pre></pre>
+
+
+<label> </label> <span> </span> <input type="submit" value= "Submit">
+<input type="reset">
+
+</form>
+</fieldset>
+
+
+</body>
+</html>
