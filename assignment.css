@@ -3,7 +3,7 @@ body{
     background: url(mann.jpg);
     background-size: cover;
     font-size: 25px;
-    font-family:fantasy;
+    font-family:Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
 }
 fieldset{
