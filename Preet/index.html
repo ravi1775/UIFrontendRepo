@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<style>
+    table tr td{
+        border: 1px solid grey;
+        padding: 7px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: medium;
+        background-color: aliceblue;
+    }
+    table{ 
+        margin-left: 550px;
+        margin-top: 90px;
+        width: 350px;
+        height: 400px;
+    }
+</style>
+<body>
+<table>
+    <form>
+            <caption><u><h1>Create an Account</h1></u></caption>
+        <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" id="fname" name="fname"></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td><input type="text" id="lname" name="lname"></td>
+        </tr>
+        <tr>
+            <td><label for="uname">User Name</label></td>
+            <td><input type="text" id="uname" name="uname"></td>
+        </tr>
+        <tr>
+            <td><label for="pswd">Password</label></td>
+            <td><input type="password" id="pswd" name="pswd"></td>
+        </tr>
+        <tr>
+            <td><label for="cpswd">Confirm Password</label></td>
+            <td><input type="password" id="cpswd" name="cpswd"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td><label for="cemail">Confirm Email</label></td>
+            <td><input type="email" id="cemail" name="cemail"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender</label></td>
+            <td><input type="radio" id="Female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</td>
+        </tr>
+        <tr>
+            <td><label for="birthdate">Birthdate</label></td>
+            <td><input type="date" id="date" name="date"></td>
+        </tr>
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td><select id="country" name="country">
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+              </select></td>
+        </tr>
+        <tr>
+            <td><label for="pcode">Postal code</label></td>
+            <td><input type="text" id="pcode" name="pcode"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Register"></td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>
