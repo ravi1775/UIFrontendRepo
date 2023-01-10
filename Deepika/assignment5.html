@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<style>
+   div.ex1 {
+  width: 500px;
+  margin: auto;
+  
+}
+</style>
+
+<h1>LOGIN CREDENTIALS </h1><BR> <BR>
+ 
+<body style="background-color: azure; color: blue; text-align:center">
+
+    <div class="ex1">Username</div>
+   
+  
+
+   <form>
+   <table>
+   
+    <label for="user"> Username</label><span><span></span><span></span><span></span>
+    <input type="text" id="user" name="user" pattern="[a-z]{4,8}" maxlength="8"><br> <br>
+    <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" id="password" pattern="[A-Za-z]{1,10}+[-_!@#$%] {1,20}" minlength="10"   maxlength="20" ><br><br>
+    <label for="phone"  > Mobile Number</label>
+    <input type="tel"id="phone"name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ><br> <br> 
+    <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" id="email" name="email"placeholder="var@domain.com" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{5,20}" maxlength="20"></input><br><br>
+    <label for="fileName">File Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="file" id="file" pattern="[A-Za-z0-9]{4,10}" > <br><br>
+    <label for="sin" >SIN</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="num" name=sin id="sin" pattern="[0-9]{2}-[0-9]{3}-[0-9]{5} " placeholder="12-123-12345" maxlength="20"><br><br>
+   <br> <label for="submit"> <input type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="reset">
+   </table> 
+
+</form>
+    
+</body>
+</html>
