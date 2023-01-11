@@ -8,8 +8,12 @@
     <title>Document</title>
     <a href="./Mocktest.css"></a>
     <link rel="stylesheet" href="./Mocktest.css">
+    <img src='https://www.engineeredwood.org/Data/Sites/3/media/images/logos/member_logos/minda_logo.jpg' alt="logo img">
+   
 </head>
+
 <body>
+   
     <div class="content">
         <h1 class="form-title">Contact form</h1>
      <form action="#">
@@ -66,15 +70,43 @@
                 <label for="address 1">Adress 1</label>
                 <input type="text" id="address1" name="address1" placeholder="address1"><br><br>
                 
-                <label for="address 2">Adress 2</label>
-                <input type="text" id="address2" name="address2" placeholder="address2"><br><br>
         
-                <label for="state">State</label>
-                <input type="text" id="state" name="address" placeholder="state"><br>
-
-
             </div>
-            <div class="contry-details-box">
+
+            <div class="user-input-box">
+                <label for="state">State</label>
+              <select id="state" name="state">
+                  <option value="mp">MadhyaPradesh</option>
+                  <option value="maharashtra">Maharashtra</option>
+                  <option value="Gujrat">Gujrat</option>
+                  <option valus="Rajastan">Rajastan</option>
+                  <option value="up">UP</option>
+              </select>
+            </div>
+            <div class="user-input-box">
+                <label for="country">Country</label>
+              <select id="country" name="country">
+                  <option value="India">India</option>
+                  <option value="Canada">Canada</option>
+                  <option value="England">England</option>
+                  <option valus="America">America</option>
+                  <option value="Newziland">Newziland</option>
+              </select>
+            </div>
+            
+            <!-- <div class="user-input-box">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="India">India</option>
+                  <option value="Canada">Canada</option>
+                  <option value="America">America</option>
+                  <option value="China">China</option>
+                  <option value="England">England</option>
+                </select>
+
+            </div> -->
+                  
+             <!-- <div class="contry-details-box">
                 <span class="country-title">Country</span><br><br>
                 
                     <div class="contry-catagory">
@@ -88,7 +120,7 @@
                      <label for="spain">Spain</label>
                     </div>
 
-           </div>
+           </div> -->
         </div>
         <div class="form-submit-btn">
             <button type="submit" class="submit">Register</button>

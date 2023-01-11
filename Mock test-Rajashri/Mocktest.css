@@ -4,14 +4,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+img{
+    width:100%;
+    max-height:100px;
+    object-fit:contain;
+}
 body{
-    background-image: url("paper.gif");
-    background-color: beige;
+    background-image: url("https://th.bing.com/th/id/R.993990ffa96e8ab1c0a225493637e7bf?rik=rWmhxd%2fYzFrk6w&pid=ImgRaw&r=0"); 
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-
     background-size: cover;
   
 }
@@ -23,7 +26,7 @@ body{
     border-radius: 10px;
     box-shadow: inset -2px 2px 2px white;
     padding: 28px;
-    color: aqua;
+    color: white;
 }
 .form-title{
     font-size: 26px;
@@ -65,7 +68,7 @@ body{
     border: 1px solid grey;
     padding: 0 10px;;
 }
-.country-title{
+/* .country-title{
     color: black;
     font-size: 24px;
     font-weight: 600;
@@ -82,7 +85,7 @@ padding: 0 20px 0 5px;
 .country-category input,
 .form-submit-btn input{
 cursor: pointer;
-}
+} */
 .gender-info{
     color:black;
 }
