@@ -4,26 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      h2{
-        color: red ;
-      }
-      body
-      {
-        background-color: aqua;
-      }
-    </style>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="vlo.png">
 </head>
 <body>
-    <h1> This is dev branch</h1>
-    <h2>Here, Vipul have made some Changes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora odit dolores soluta modi est?</p>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <h1>This is first change</h1>
-    <h2>This is second changes</h2>
-    <h3>This is third change</h3>
-    <h2>This is cherry pick</h2>
+   <header>
+    <h1>VPINFOTECH</h1>
+   </header>
+   <section>
+    <form class="signup-form" action="">
+        <div class="form-header">
+            <h1>Create Account</h1>
+        </div>
+        <div class="form-body">
+            <div class="row">
+                <div class="input-group">
+                    <label for="">First Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label for="">Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="">Password</label>
+                    <input type="password">
+                </div>
+                <div class="input-group">
+                    <label for="">Confirm Password</label>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="">Gender</label>
+                    <div class="radio-group">
+                        <div>
+                            <label for="" >
+                                <input type="radio" name="gender">
+                                Male</label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="radio" name="gender">
+                                Female</label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="radio" name="gender">
+                                Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">Hobbies</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <label for="">
+                                <input type="checkbox">
+                                Reading</label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="checkbox">
+                                Music</label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="checkbox">
+                                Cooking</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="">Source of Income</label>
+                    <select name="" id="">
+                        <option value="">Employed</option>
+                        <option value="">Unmployed</option>
+                        <option value="">Self-Employed</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="">Income</label>
+                    <div class="range-group">
+                        <input type="range"/>
+                        <label id="income-label">20 k</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="">Comments</label>
+                    <textarea name="" id="" cols="10" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <input type="Submit" value="Create">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
 </body>
 </html>

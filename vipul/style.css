@@ -1,10 +1,117 @@
-h1 
-{
-    background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&family=Chivo+Mono:wght@300&family=Courgette&family=Poppins:wght@200&family=Ropa+Sans:ital@1&display=swap');
+*{
+    margin: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
 }
-h2
+header 
 {
-    background-color: aquamarine;
-    font-size: 50px;
+border:1px solid black;
+height: 50vh;
+margin: 0px;
+padding: 0px;
+background-image: url("data:image/jpeg;base64,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");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+header h1
+{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(206, 202, 202);
+    text-shadow: -2px 2px 5px rgb(62, 61, 61),4px 4px 5px rgb(128, 134, 128);
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.signup-form
+{
+    background-color: #d4d4cf;
+    max-width: 600px;
+    flex: 1;
+    border: 1px solid lightskyblue;
+}
+.form-header
+{
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+.form-header h1
+{
+    text-align: center;
+    font-size: 28px;
+    color: blue;
+}
+.form-body
+{
+    background-color:white;
+    padding: 5px 10px;
+
+}
+.row    
+{
+    display:flex
+}
+.input-group
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+label
+{
+    color: rgb(47, 0, 89);
+    margin: 5px 5px;
+}
+input[type="text"],select,input[type="email"],input[type="password"]
+{
+border:none;
+outline: none;
+border-bottom: 2px solid black;
+border-radius: 3px;
+padding: 5px 5px;
+}
+.radio-group,.checkbox-group
+{
+    display: flex;
+}
+.radio-group  div,
+.checkbox-group div
+{
+    flex: 1;
+}
+.range-group
+{
+    display: flex;
+}
+.range-group input
+{
+    flex: 1;
+}
+
+textarea
+{
+    resize: none;
+    
+    height: 50px;
+}
+
+input[type="submit"]
+{
+    color: darkblue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+input[type="submit"]:hover
+{
+    background-color: lightblue;
 }
 
