@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url("paper.gif");
+    background-color: beige;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+  
+}
+.content{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0,0,0,0.5 green, blue, alpha);
+    margin:0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    padding: 28px;
+    color: aqua;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px black;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n){
+   justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width:95%;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
+
+}
+.user-input-box input{
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;;
+}
+.country-title{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.country-category{
+margin: 15px 0;
+color: aliceblue;
+}
+.country-category label{
+padding: 0 20px 0 5px;
+}
+.contry-catagory  label,
+.country-category input,
+.form-submit-btn input{
+cursor: pointer;
+}
+.gender-info{
+    color:black;
+}
+.submit{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209,209,209);
+    background: rgba(63,114,76,0.7);
+   }
