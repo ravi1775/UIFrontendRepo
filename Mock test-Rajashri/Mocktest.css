@@ -6,11 +6,12 @@
 }
 img{
     width:100%;
-    max-height:100px;
     object-fit:contain;
+    max-height: 100%;
 }
 body{
-    background-image: url("https://th.bing.com/th/id/R.993990ffa96e8ab1c0a225493637e7bf?rik=rWmhxd%2fYzFrk6w&pid=ImgRaw&r=0"); 
+    background-image: url("https://th.bing.com/th/id/R.993990ffa96e8ab1c0a225493637e7bf?rik=rWmhxd%2fYzFrk6w&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -43,9 +44,7 @@ body{
     justify-content: space-between;
     padding: 20px 0;
 }
-.user-input-box:nth-child(2n){
-   justify-content: end;
-}
+
 .user-input-box{
     display: flex;
     flex-wrap: wrap;
@@ -60,13 +59,13 @@ body{
     color: black;
 
 }
-.user-input-box input{
+.user-input-box input,.select-country,.select-state{
     height: 40px;
     width:95%;
     border-radius: 7px;
     outline:none;
     border: 1px solid grey;
-    padding: 0 10px;;
+    padding: 0 10px;
 }
 .country{
   font-weight: 200;
@@ -76,7 +75,18 @@ body{
 }
 .gender-info{
     color:black;
-    margin: 5px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 20 30 10 40;
+    margin-top: 15px;
+}
+.gender-title{
+    margin-top: 5px;
+    width:95%;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
 }
 .submit{
     display: block;
@@ -87,5 +97,43 @@ body{
     border: none;
     border-radius: 3px;
     color: rgb(209,209,209);
-    background: rgba(63,114,76,0.7);
+    background: rgba(72, 139, 89, 0.7);
+    cursor: pointer;
    }
+.submit:hover{
+    background-color:green;
+    color: white;
+}
+.select-state {
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.select-country{
+    display: flex;
+    height: 40px;
+    width:50%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.contact-address{
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+#address,#address1,#state{
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+marquee{
+    color: black;
+}
