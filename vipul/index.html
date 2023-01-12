@@ -20,66 +20,71 @@
         <div class="form-body">
             <div class="row">
                 <div class="input-group">
-                    <label for="">First Name</label>
-                    <input type="text">
+                    <label>First Name</label>
+                    <input type="text" required>
                 </div>
                 <div class="input-group">
-                    <label for="">Last Name</label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-group">
-                    <label for="">Email</label>
-                    <input type="email">
+                    <label>Last Name</label>
+                    <input type="text" required>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group">
-                    <label for="">Password</label>
-                    <input type="password">
+                    <label>Email</label>
+                    <input type="email" required>
                 </div>
                 <div class="input-group">
-                    <label for="">Confirm Password</label>
-                    <input type="password">
+                    <label>Phone Number</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group">
-                    <label for="">Gender</label>
+                    <label>Password</label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Gender</label>
                     <div class="radio-group">
                         <div>
-                            <label for="" >
+                            <label>
                                 <input type="radio" name="gender">
                                 Male</label>
                         </div>
                         <div>
-                            <label for="">
+                            <label>
                                 <input type="radio" name="gender">
                                 Female</label>
                         </div>
                         <div>
-                            <label for="">
+                            <label>
                                 <input type="radio" name="gender">
                                 Other</label>
                         </div>
                     </div>
                 </div>
                 <div class="input-group">
-                    <label for="">Hobbies</label>
+                    <label>Hobbies</label>
                     <div class="checkbox-group">
                         <div>
-                            <label for="">
+                            <label>
                                 <input type="checkbox">
                                 Reading</label>
                         </div>
                         <div>
-                            <label for="">
+                            <label>
                                 <input type="checkbox">
                                 Music</label>
                         </div>
                         <div>
-                            <label for="">
+                            <label>
                                 <input type="checkbox">
                                 Cooking</label>
                         </div>
@@ -88,7 +93,7 @@
             </div>
             <div class="row">
                 <div class="input-group">
-                    <label for="">Source of Income</label>
+                    <label>Employment type</label>
                     <select name="" id="">
                         <option value="">Employed</option>
                         <option value="">Unmployed</option>
@@ -96,7 +101,7 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="">Income</label>
+                    <label>Income</label>
                     <div class="range-group">
                         <input type="range"/>
                         <label id="income-label">20 k</label>
@@ -105,7 +110,7 @@
             </div>
             <div class="row">
                 <div class="input-group">
-                    <label for="">Comments</label>
+                    <label  >Comments</label>
                     <textarea name="" id="" cols="10" rows="10"></textarea>
                 </div>
             </div>
