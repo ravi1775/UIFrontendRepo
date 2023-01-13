@@ -23,21 +23,21 @@
   <form>
     <fieldset>
     <label for="fname">First Name</label> &nbsp;&nbsp;&nbsp;
-    <input class="input" type="text" id="fname"  name="firstname" pattern=[A-Za-z]{5,8} placeholder="Enter your name"><br>
+    <input required class="input" type="text" id="fname"  name="firstname" pattern=[A-Za-z]{5,8} placeholder="Enter your name"><br>
 
     <label for="lname">Last Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
-    <input class="input" type="text" id="lname" name="lastname" pattern=[A-Za-z]{5,8} placeholder="Enter your last name"><br>
+    <input required class="input" type="text" id="lname" name="lastname" pattern=[A-Za-z]{5,8} placeholder="Enter your last name"><br>
 
     <label for="phonenumber">Phone-number </label><span></span>
-    <input class="input" type="tel" id="Phonenumber" name="phonenumber" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890"><br>
+    <input required class="input" type="tel" id="Phonenumber" name="phonenumber" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890"><br>
     <label for="emailid">Email-id</label><span>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <span></span>
-    <input class="input" type="email" id="EmailId" name="email" placeholder="Email address"><br>
+    <input required  class="input" type="email" id="EmailId" name="email" placeholder="Email address"><br>
     <label for="gender">Gender</label>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="radio"  id="female" name="gender" value="FEMALE"><label for="female">FEMALE</label>
+    <input required  type="radio"  id="female" name="gender" value="FEMALE"><label for="female">FEMALE</label>
         <input type="radio"  id="male" name="gender" value="MALE"><label for="male">MALE</label><br>
 <br>
 <label for="address"> Address </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input class="input" type="address" id="address"pattern=[A-Za-z0-9]{1,20}+[/!#*]{1,5}>
+<input required  class="input" type="address" id="address"pattern=[A-Za-z0-9]{1,20}+[/!#*]{1,5}>
 .<br>
 <label for="state">State  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <select id="state" name="state" class="input">
