@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1>Mindia</h1>
+
 <div id="Contactid"  class="content">
         <marquee width="60%" direction="right" height="100px" >
             Welcome to Mindia!.
@@ -63,23 +63,32 @@
                 required
                 >
             </div>
+           
             <div class="gender-info">
                 <label for="gender" class="gender-title">Gender</label>
                     <label class="radio">
-                      <input type="radio" name="gender">
+                      <input type="radio" name="gender" class="gender-input">
                       Male
                     </label>
                     <label class="radio">
-                      <input type="radio" name="gender">
+                      <input type="radio" name="gender" class="gender-input">
                       Female
                     </label><br>
              </div>
         <fieldset class="contact-address">
         <div class="user-input-box">
             <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="address"><br><br>
-            <label for="address 1">Adress 1</label>
-            <input type="text" id="address1" name="address1" placeholder="address1"><br><br>
+            <input 
+            type="text" 
+            id="address" 
+            name="address" 
+            placeholder="address"
+            required
+            ><br><br>
+            <label for="address 1">Address 1</label>
+            <input 
+            type="text" 
+            id="address1" name="address1" placeholder="address1"><br><br>
          </div>
         <div class="user-input-box">
             <label for="state">State</label>
