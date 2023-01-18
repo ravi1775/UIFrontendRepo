@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Demo</title>
+    <!-- 
+        var 
+        - assume that you have used same color for different properties like on h1,p,span .. etc.
+        - then if you want to change this applied colour from this properties you have to replace it one by one from all properties.
+        - that process become the time comsuming. to overcome this you can use 'var'.
+        - following is the example
+        :root                       // When you create variable in 'root'.that means you create variable as Global.
+        {
+            --main-color : red;     // here main-color is variable name and red is its value.
+                                    // you can create as many variables as you want.
+        }
+        .classA
+        {
+            color:var(--main-color);
+        }
+        .classB
+        {
+            color:var(--main-color);
+        }
+
+                    How to create variable as local .
+                    -create variable inside the .class or #id
+                    .classA
+                    {
+                        --main-color:red;
+                        color:var(--main-color);
+                    }
+     -->
+     </head>
+     <style>
+         :root{
+             --main-color:yellow++++;
+         }
+        #box
+        {
+            border: 1px solid var(--main-color);
+            height: 250px;
+            width: 250px;
+            background-color: aquamarine;
+            position: sticky;
+            top: 25px; 
+            
+        }
+        h1{
+            color: var(--main-color);
+        }
+        p
+        {
+            background-color: var(--main-color);
+        }
+        h3{
+            --mycolor:red;
+            color: var(--mycolor);
+        }
+    </style>
+<body>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+<h1> Vipul : CSS Variable</h1>    
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta necessitatibus mollitia corrupti nam delectus, ratione ipsa et voluptatibus iste enim incidunt animi quia neque atque velit ducimus voluptatem! In quam ut incidunt dignissimos velit error, maxime eum doloremque dolores, itaque vitae quae autem facilis expedita blanditiis harum quos? Eaque incidunt atque consectetur vero sapiente facere tempora distinctio accusantium ex rem blanditiis eius nostrum, eos quos, ratione facilis! Quibusdam, velit amet. Illum enim reprehenderit, eligendi laudantium sit obcaecati illo labore suscipit iure, reiciendis mollitia temporibus dignissimos id ad nobis perferendis! Deleniti totam exercitationem ea laudantium unde, magnam nostrum accusantium laborum odio quia optio, reprehenderit quam, amet voluptatum qui odit. Voluptate veritatis consequatur vel ad minima consectetur, libero dolor. Ad cupiditate, eos sed culpa ab cum numquam, tenetur aut quis, natus aliquid. Accusantium necessitatibus rem, dolorum minus, facilis maxime, sapiente architecto neque beatae itaque temporibus consequuntur excepturi? Natus tempora corrupti enim iusto animi veniam, cumque blanditiis rem non odio impedit nisi, magnam nemo aliquam est, ut tempore esse ab cupiditate at amet. Reprehenderit, ullam? Id quaerat eveniet adipisci tenetur minima eligendi autem voluptatibus, quidem eaque aperiam ab voluptates, veniam dolore praesentium doloribus fugiat modi alias placeat neque error. Corporis, dolorem saepe.</p>
+<div id="box">  </div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae praesentium neque. Laudantium libero atque quia harum consectetur culpa quae tenetur voluptatem mollitia delectus ab nesciunt reprehenderit, ullam repellat laboriosam sapiente nisi deserunt provident minima earum. Voluptatem illo ducimus praesentium assumenda consectetur pariatur tempore cumque repellendus ea quisquam numquam autem molestias dicta vitae sunt blanditiis velit, consequuntur dolorem, unde alias odit! Voluptatum fugit omnis ex quis deserunt nesciunt in velit alias placeat quaerat assumenda natus nisi illum voluptatibus libero rem molestias voluptate, obcaecati impedit, modi doloribus. Sunt, saepe. Consequuntur iure sunt corrupti laboriosam illo similique autem error quasi nostrum dignissimos doloribus optio animi maiores deserunt, ut excepturi necessitatibus culpa quibusdam cupiditate itaque possimus. Earum, quod pariatur. Dolorem ex saepe labore corrupti non voluptatum unde? Dolore, voluptatibus soluta est distinctio sint nobis, magni perferendis et laudantium harum repudiandae perspiciatis quas aperiam excepturi magnam illo veniam ab autem asperiores nam? Laudantium cum aliquid explicabo qui saepe? Consequuntur, aspernatur, in soluta vitae numquam rem voluptates consectetur ullam nesciunt adipisci aperiam? Mollitia nisi voluptatum quas necessitatibus provident. Qui ex asperiores, impedit minus quisquam repudiandae molestias quod omnis odit, perspiciatis eligendi, in quia ab perferendis nam molestiae non temporibus inventore itaque. Unde ipsum enim deleniti quasi fugit? Quia quisquam voluptatem culpa distinctio cupiditate ab ipsam, doloribus vero architecto beatae labore nostrum quod optio ullam sit molestias, vel tempora enim id. Alias soluta blanditiis iste exercitationem quam deserunt dolor. Doloribus molestias non esse soluta nemo accusamus consectetur, quo cumque ducimus ratione earum laudantium laborum eius, nostrum ad praesentium est natus veritatis quaerat alias neque facilis dicta perspiciatis. Libero, hic cupiditate eius velit praesentium tempora earum perferendis provident maxime? Sequi expedita atque error aspernatur earum facere vel magni fugit adipisci, rem dolor possimus molestiae. Voluptatibus similique tenetur nulla mollitia dolores expedita ullam fugit aliquam delectus quis facere doloremque, sequi, ipsum accusantium! Ducimus, amet laborum! Neque, tenetur at! Quisquam odit dolor ullam, fugit aspernatur in praesentium minima! Nobis vel sapiente blanditiis nulla repellat error eum suscipit dolor labore atque fugit eligendi mollitia animi sunt consequatur quasi placeat voluptatibus repudiandae nostrum enim facilis debitis aliquid, exercitationem quod. Natus esse placeat voluptate sit. Pariatur reiciendis deserunt atque, maiores mollitia labore tempora. Pariatur voluptatem odio, porro fuga tempora modi itaque. Error quisquam inventore id vero praesentium vitae repellat vel omnis delectus? Quod, placeat labore consectetur pariatur at necessitatibus esse. Reiciendis repellendus nisi suscipit consequatur laudantium quisquam minima accusantium totam fugit, alias recusandae amet non assumenda doloribus ducimus modi quam deserunt, sit temporibus provident voluptatibus magnam quaerat. Quia neque voluptates alias debitis praesentium enim, consectetur nobis nostrum, accusantium quae fugit error aperiam. Incidunt reprehenderit non sed, hic distinctio tenetur! Repudiandae, officia illo doloribus corrupti voluptas consectetur nemo dolores tempora quos? Architecto magnam optio accusantium necessitatibus mollitia harum quaerat. Nobis voluptatem maiores commodi quod earum mollitia aliquam dolor temporibus id laborum doloremque beatae quidem, doloribus facilis obcaecati unde quibusdam. Impedit molestias cupiditate ipsum ad facilis excepturi, asperiores nulla magni cumque dolor sunt laudantium veritatis odit, soluta veniam doloribus explicabo libero illo similique. Quasi consequatur voluptas animi aliquid, eius ratione accusamus quisquam dolor sunt, impedit excepturi veniam ad in. Eaque dolores eligendi cum amet optio quae eveniet architecto. Et nulla quia voluptates veritatis id facere debitis velit sequi, aperiam voluptas fugit assumenda maiores nostrum, aspernatur temporibus repudiandae harum dolorem similique, porro a perspiciatis! Hic qui consectetur aspernatur quos accusantium cupiditate ad enim alias voluptate, sequi ratione magnam similique velit dolorum et facere cum ex temporibus quam ipsum vitae iusto id libero accusamus. Deserunt consequuntur iusto omnis magni, sunt et, voluptate distinctio excepturi doloremque soluta molestiae officia vel, provident doloribus neque magnam pariatur illo sapiente aut. Veniam animi excepturi quasi, ex totam facilis accusamus quibusdam obcaecati, minima quam, provident quod asperiores fugiat. Distinctio sit cum error, nostrum aliquam enim ut a iure assumenda? Necessitatibus nulla vitae nobis amet, nihil voluptatem et! Natus possimus enim nihil sint commodi totam sunt velit quae illum ducimus mollitia sit ab nemo ipsum qui necessitatibus architecto voluptas autem placeat numquam asperiores id nulla, sequi dolor? Nostrum similique ipsam voluptatibus nesciunt pariatur libero earum ea velit magnam at distinctio, corporis facilis placeat praesentium numquam eveniet rem consequuntur ut explicabo quae. Quam rem dolor voluptate temporibus veniam necessitatibus, corporis dolorem fugiat itaque.</p>
+</body>
+</html>

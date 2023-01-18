@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    width:100%;
+    object-fit:contain;
+    max-height: 100%;
+}
+body{
+    background-image: url("https://th.bing.com/th/id/R.993990ffa96e8ab1c0a225493637e7bf?rik=rWmhxd%2fYzFrk6w&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  
+}
+.content{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0,0,0,0.5 green, blue, alpha);
+    margin:0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    padding: 28px;
+    color: white;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px black;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width:95%;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
+
+}
+.user-input-box input,.select-country,.select-state{
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.country{
+  font-weight: 200;
+  font-size: 20px;
+  color: black;
+  margin: 5px 0;  
+}
+.gender-info{
+    color:black;
+    height: 40px;
+    border-radius: 7px;
+    padding: 20 30 10 40;
+    margin-top: 15px;
+}
+.gender-title{
+    margin-top: 5px;
+    width:95%;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
+}
+.submit{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209,209,209);
+    background: rgba(72, 139, 89, 0.7);
+    cursor: pointer;
+   }
+.submit:hover{
+    background-color:green;
+    color: white;
+}
+.select-state {
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.select-country{
+    display: flex;
+    height: 40px;
+    width:50%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.contact-address{
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+#address,#address1,#state{
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+marquee{
+    color: black;
+}
