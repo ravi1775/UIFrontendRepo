@@ -4,26 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      h2{
-        color: red ;
-      }
-      body
-      {
-        background-color: aqua;
-      }
-    </style>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://media.istockphoto.com/id/1340928027/vector/m-letter-initial-luxurious-logo-template-m-logo-golden-concept-m-letter-logo-with-golden.jpg?b=1&s=612x612&w=0&k=20&c=Y9-Wmi9rTAGw1swDVmU7Z0RlMeSibKjXEq29FOXWuUc=">
 </head>
 <body>
-    <h1> This is dev branch</h1>
-    <h2>Here, Vipul have made some Changes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora odit dolores soluta modi est?</p>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <h1>This is first change</h1>
-    <h2>This is second changes</h2>
-    <h3>This is third change</h3>
-    <h2>This is cherry pick</h2>
+   <main>
+    <header>
+        <img src="https://mindia.in/assets/img/logo.png" alt="" width="50%" height="50%">
+    </header>
+   <section>
+    <form class="signup-form" action="">
+        <div class="form-header">
+            <h1>Create Account</h1>
+        </div>
+        <div class="form-body">
+            <div class="row">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <div>
+                            <label>
+                                <input type="radio" name="gender">
+                                Male</label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="gender">
+                                Female</label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="gender">
+                                Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Hobbies</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <label>
+                                <input type="checkbox">
+                                Reading</label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox">
+                                Music</label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox">
+                                Cooking</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Employment type</label>
+                    <select name="" id="">
+                        <option value="">Employed</option>
+                        <option value="">Unmployed</option>
+                        <option value="">Self-Employed</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Income</label>
+                    <div class="range-group">
+                        <input type="range"/>
+                        <label id="income-label">20 k</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label  >Comments</label>
+                    <textarea name="" id="" cols="10" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <input type="Submit" value="Create">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+</main>
 </body>
 </html>

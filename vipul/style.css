@@ -1,10 +1,120 @@
-h1 
-{
-    background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&family=Chivo+Mono:wght@300&family=Courgette&family=Poppins:wght@200&family=Ropa+Sans:ital@1&display=swap');
+*{
+    margin: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
 }
-h2
+*
 {
-    background-color: aquamarine;
-    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+header img
+{
+    align-self: center;
+    width:100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position:inherit;
+    background-size: cover; 
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.signup-form
+{
+    background-color: #d4d4cf;
+    max-width: 600px;
+    flex: 1;
+    border: 1px solid lightskyblue;
+}
+.form-header
+{
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+.form-header h1
+{
+    text-align: center;
+    font-size: 28px;
+    color: blue;
+}
+.form-body
+{
+    background-color:white;
+    padding: 5px 10px;
+
+}
+.row    
+{
+    display:flex
+}
+.input-group
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+label
+{
+    color: rgb(47, 0, 89);
+    margin: 5px 5px;
+}
+input[type="text"],select,input[type="email"],input[type="password"],input[type="tel"]
+{
+border:none;
+outline: none;
+border-bottom: 2px solid black;
+border-radius: 3px;
+padding: 5px 5px;
+}
+.radio-group,.checkbox-group
+{
+    display: flex;
+}
+.radio-group  div,
+.checkbox-group div
+{
+    /* flex: 1; */
+    padding: 0px;
+    margin: 0px;
+}
+.range-group
+{
+    display: flex;
+}
+.range-group input
+{
+    flex: 1;
+}
+
+textarea
+{
+    resize: none;
+    
+    height: 50px;
+}
+
+input[type="submit"]
+{
+    color: darkblue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+input[type="submit"]:hover
+{
+    background-color: lightblue;
 }
 
