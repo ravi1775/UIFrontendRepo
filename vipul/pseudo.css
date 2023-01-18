@@ -1,0 +1,106 @@
+/* first-child :- you can apply this property on any element but the condition is that it should be the child of any other element. e.g If u try to apply these property on 'p' element then it does not make any changes. 'p' should be the child of any other element. you can put 'p' into 'div' tag then you definetly get result. see the following result 'li' is child of the 'ul' tag. */
+li:first-child
+{
+    color: red;
+}
+/* last-child :- it is the opposite of the first-child. it will applyies the property on the last child of any element. */
+li:last-child
+{
+    color: yellowgreen;
+}
+#list2 li:last-child
+{
+    color: blueviolet;
+}
+/*  nth-child() :- In the bracket there is integer number. you can make changes on spcified number's child element.U can also mention the formula in the bracket. e.g n,2n,3n,4n..2n+1, 3n-2 etc. where n=1,2,3,4,5,6.... Here, also the applicable element should be the child of any other parent elements.
+ */
+#list1 li:nth-child(4)
+{
+    background-color: aqua;
+}
+p:nth-child(2)
+{
+    color: aquamarine;
+}
+/* 
+ nth-last-child():- It is start from bottom. Means it applies property from bottom child".
+  */
+p:nth-last-child(1)
+{
+    color: red;
+}
+/* 
+    nth-of-type():- It will target any element whether it is child or not child.
+*/
+/* 
+nth--last-of-type():- It's start from bottom.
+ */
+p:nth-of-type(2)
+{
+    background-color: yellow;
+}
+li:nth-of-type(3)
+{
+    font-weight: bolder;
+}
+ /* 
+ only-child :- It will affect only that element which is only child of his parent.
+ */
+ h3:only-child
+ {
+    color: blueviolet;
+ }
+ /* :only-of-type :- It will affect only element available in the web page e.g 'h1' tag used only once in the page. If there are two 'h1' tag then this property will not get applied */
+ h3:only-of-type
+ {
+    background: #000;
+ }
+ /* 
+ first-of-type:- It will only target only first element of any type. Dosen't matter whether it is parent or not.
+ */
+ /* :last-of-type :- It is start from bottom */
+ p:first-of-type
+ {
+    font-style: italic;
+ }
+
+ /* :empty :- It is target only those element which are empty.see below example.If you provide single space"whitespace" in the tag then also this property will not get applied.
+ e.g <div>  </div> =>> here two white spaces are there in between 'div' tag.
+  */
+  div:empty
+  {
+    border: 2px solid black;
+    height: 20px;
+  }
+
+  /* 
+:not() :- It will not target the element mentioned in the ().
+e.g p:not(#p1) means it will target all 'p' except #p1.
+   */
+   p:not(#p1)
+   {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+/* 
+:lang() : It will target only those which has lang mentioned ().
+e.g : p:lang(fr) : It will target only those p which have lang french.
+*/
+p:lang(gu)
+{
+    color: red;
+}
+
+/* 
+link,visited,hover,active
+mostly use with 'a' tag
+*/
+
+/* 
+:target :- you can use this with 'a' tag and link.
+see the below example. Here I have used hyperlink inside the page.
+*/
+
+p:target
+{
+background-color: goldenrod;
+}
