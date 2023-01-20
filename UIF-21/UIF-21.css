@@ -1,0 +1,8 @@
+.list1 li:nth-child(3)
+{
+    color: aquamarine;
+}
+.list1 li:nth-last-child(3)
+{
+    background-color: blue;
+}
