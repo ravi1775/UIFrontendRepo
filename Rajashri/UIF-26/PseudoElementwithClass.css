@@ -1,0 +1,40 @@
+:root{
+    --textsize:50px;
+    --textcolor:#7c9ff7
+}
+.first::first-letter{
+    font-size: var(--textsize);
+    color: aqua;
+    background-color:rebeccapurple;
+    padding: 5px;
+}
+.first::first-line{
+   background-color: var(--textcolor);
+   text-transform: uppercase;
+   font-size: small;
+   line-height: 1.23;
+}
+p::after{
+    content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/640px-PNG_transparency_demonstration_1.png');
+}
+h1:hover{
+    background-color:var(--textcolor);
+}
+.container::first-line{
+    text-align: center;
+    color:#67001a;
+    font-style:oblique;
+    box-sizing: border-box;
+}
+.first:hover::selection{
+    color:red;
+    background-color:#eeee44;
+}
+a:active{
+    background-color: rgb(255, 47, 0);
+    color: #fff;
+    font-size: var(--textsize);
+}
+
+
+
