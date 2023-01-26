@@ -1,0 +1,34 @@
+.header{
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+.mainNav{
+    background-color: bisque;
+    overflow: hidden;
+}
+.mainNav a {
+    background-color: blueviolet;
+    text-align: center;
+    float: left;
+    padding: 14px 16px;
+}
+.mainNav a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.column{
+    float: left;
+    width: 33.33%;
+}
+.row{
+    display: table;
+    contain: "";
+    clear: both;
+
+}
+.mainFooter{
+ background-color:aliceblue;
+ text-align: center;
+ padding: 12px;
+}
