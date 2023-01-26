@@ -1,0 +1,103 @@
+*
+{
+    margin: 0%;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: large;
+    font-family: "Sofia", "sans-serif";
+    background-color: black;
+    position: sticky;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+.box1{
+    display:grid;
+    height: 700px;
+    width: 100px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "Sofia", "sans-serif";
+    position: sticky;
+    background-color: black;
+    padding: 7px;
+}
+.bigbox a{
+    color: white;
+}
+.bigbox{
+    display: flex;
+    padding: 10px;
+    margin-top: 5%;
+    
+}
+.box1 a{
+    color: white;
+    position: sticky;
+    font-size: 30px;
+}
+.bigbox a{
+    text-decoration: none;
+    
+}
+.box2{
+    display: grid;
+    
+}
+.header{
+    height: fit-content;
+    width: fit-content;
+    margin-top: -5%;
+    margin-left: 350px;
+    font-style: italic;
+}
+.para{
+    
+    width: 50%;
+    height: fit-content;
+    margin-left: 50px;
+    margin-top: -20%;
+    font-size: 17px;
+    font-style: italic;
+    font-family: "Sofia", "sans-serif";
+}
+.para2{
+    margin-top: -22%;
+    width: 50%;
+    height: fit-content;
+    margin-left: 50%;
+    font-size: 17px;
+    font-style: italic;
+    font-family: "Sofia", "sans-serif";
+}
+.para3{
+    margin-top: -30%;
+    width: 50%;
+    height: fit-content;
+    margin-left: 4%;
+    font-size: 17px;
+    font-style: italic;
+    font-family: "Sofia", "sans-serif"; 
+}
+
+.pic1 img{
+    width: 30%;
+    margin-left: 60%;
+}
+.pic2 img{
+    width: 35%;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+.pic3 img{
+    margin-top: 8%;
+    width: 25%;
+    margin-left: 60%;
+}
