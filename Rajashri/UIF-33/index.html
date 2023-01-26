@@ -27,8 +27,21 @@
         <p>This is third column</p>
     </div>
    </div>
-   <div id="divFooter" class="mainFooter">
-   <p>Footer Section</p>
+  
+   <p id="demo"></p>
    </div>
+
+   <script>
+    document.getElementById('divHeader').innerHTML = 'Hello javaScript';
+    document.getElementById('divHeader').style.color = 'blue';
+    document.getElementsByTagName("p")[0].innerHTML = "Hello World!";
+    const collection = document.getElementsByTagName("*");
+    let text = ""
+    for (let i = 0; i < collection.length; i++) {
+    text += collection[i].tagName + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+   </script>
+   
 </body>
 </html>
