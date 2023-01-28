@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIF-44 </title>
+</head>
+<body>
+    <h3>Replace blank space between string</h3>
+    <h1>The quick brown fox jumps over the lazy dog</h1>
+    <script>
+        // To test any regular expression we have to put them between two forward slashes (//).
+        // In our case we have to first search the white space in the string.for single white space we use '\s'
+        // \s means single space.
+        // \s+ means one or more space.
+        // g flag means with all occurance of that regex. here, it means it will replace as many time as many spaces.
+        var str = 'The quick brown fox jumps over the lazy dog';
+        console.log(str.replace(/\s/g, '')); 
+        console.log('Hello');
+    </script>
+</body>
+</html>
