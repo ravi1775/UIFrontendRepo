@@ -1,0 +1,48 @@
+.div1{
+    border: 1px;
+    width: 100%;
+    height: 80px;
+    background-color: aqua;
+     text-align: center;
+    color: blue;
+     align-content: l;
+    }
+    .div2:hover{
+        color: blue;
+        border: 1px;
+        width: 100%;
+        height: 30px;
+        background-color:plum;
+        text-shadow: 80px;  
+       
+      
+        }
+        
+
+       .div3{
+      background-color: aquamarine;
+      float:right;
+
+
+      
+    
+       }
+       .div4{
+        height:615px;   
+      justify-content: center;
+        color: brown;
+        background-color: yellow;
+       
+   
+        
+       }
+       .div5{
+        color: blue;
+        border: 1px;
+        width: 100%;
+        height: 30px;
+        background-color:violet;
+        text-shadow: 80px;  
+        }
+
+    
