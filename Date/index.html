@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date function</title>
+</head>
+<body>
+    <button onclick="createDate()">Enter date</button>
+    <script>
+        function createDate(){
+           const date = new Date();
+           const date1 = new Date();
+           var utcday = date1.getUTCDay();
+           var utcmonth = date1.getUTCMonth();
+           var utcyear = date1.getUTCFullYear();
+           const utcdate = new Date(utcyear,utcmonth,utcday);
+           //console.log(utcdate);
+          console.log(date.toDateString());
+          console.log(date.getTime());
+        //    console.log(date.getDate());
+        //    console.log(date.getDay());
+        //    console.log(date.getFullYear());
+        //    console.log(date.getHours());
+        //    console.log(date.getUTCDate());
+        //    console.log(date.getUTCHours());
+        //    console.log(date.setFullYear('2024'));
+        //    console.log(date.setDate(30))
+        }
+    </script>
+</body>
+</html>
