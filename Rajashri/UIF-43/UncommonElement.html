@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./UncommonElement.css">
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button  type="button" id="btn" onclick="unCommonElement()">Enter</button>
+  <script>
+        function unCommonElement(){
+
+            var emp = ["ram", "rahul","rahul", "amit", "shyam", "mohan"];
+            var newEmp = console.log(emp.filter((value,index) => emp.indexOf(value) === emp.lastIndexOf(value)));
+            
+            var emp1 =  ["ram","shyam", "mohan", "harry","ram"];
+            var newEmp1 = console.log(emp1.filter((value,index) => emp1.indexOf(value) === emp1.lastIndexOf(value)));
+
+
+           /* var result = newEmp.concat(newEmp1)
+            const result = document.write(newEmp.concat(newEmp1));//[]
+            var newArray = document.write(result.filter((value,index) => result.indexOf(value) === result.lastIndexOf(value))); */
+    
+         }
+</script>
+    
+</body>
+</html>
