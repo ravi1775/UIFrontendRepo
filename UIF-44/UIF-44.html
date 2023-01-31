@@ -15,9 +15,44 @@
         // \s means single space.
         // \s+ means one or more space.
         // g flag means with all occurance of that regex. here, it means it will replace as many time as many spaces.
-        var str = 'The quick brown fox jumps over the lazy dog';
-        console.log(str.replace(/\s/g, '')); 
+        //var str = 'The quick brown fox jumps over the lazy dog';
+       // console.log(str.replace(/\s/g, '')); 
+
+       var str = "Hello Vipul";
+       
         console.log('Hello');
+        var n = 9;
+        var count=0;
+        for(let i = 2; i < n; i++)
+        {
+            if(n%i == 0){
+                var res = `${n} is not prime`;
+                break;
+            }
+            else{
+                var res = `${n} is prime`;
+           
+            }
+        }
+        console.log(res);        
+       /*var  n = 15; 
+       var count =0;
+       for(let i=1 ;i<=n; i++)
+       {
+        if(n%i ==0)
+        {
+            count = count +1;
+        }
+       }
+       if(count == 2)
+       {
+        console.log('prime');
+       }
+       else
+       {
+        console.log('not prime');
+       }
+      */
     </script>
 </body>
 </html>

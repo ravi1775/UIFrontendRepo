@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date html</title>
+</head>
+<!-- 
+    To use date U alsways have to create Date object.
+    -- var now = new Date() -- here 'now' is variable 
+       refereing the object Date(). Here this will print 
+       long date with time. To make it shorter you can 
+       use "toDateString()" with variable in our case it  
+       'now'.
+
+    --  To get particular day,date or month from date you can use the following methods.getDate(),getFullYear(),getMonth(),getday().
+    Here for all these methods will returns it's output in the form index and indexing start from 0,1..likeways.
+    e.g 'sunday' it returns '0'. All output is for current date. You can use these methods for past and future date also.
+
+    --   Similarly,U will have mehods to extract a time.
+        e.g getHours(),getMinutes(),getSeconds(),getMilliSeconds(). You can directly use with 'now'. you can do mathematical operation with it.
+
+    -- You can set future date using setDate(),setDay(),setMonth(),setFullYear()
+ -->
+<body>
+    <script>
+        var now = new Date()
+        now.getUTCDate(5);
+        document.write(now);
+    </script>
+</body>
+</html>
