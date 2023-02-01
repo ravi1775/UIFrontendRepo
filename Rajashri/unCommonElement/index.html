@@ -10,21 +10,33 @@
     <button onclick="unCommonElement()">Uncommon Element</button>
     <script>
         const unCommonElement = () =>{
-            var emp = ['Harry', 'Potter', 'John', 'Emily', 'David','Jorge'];
-            var emp1=['Emily', 'Max', 'John', 'David', 'Pitter', 'Pitter', 'Emily'];
             var result = [];
+            var emp = ['Ram', 'Rahul','Gopal','Ram'];
+            var emp1=['Rahul', 'Gopal', 'Krishna', 'Krishna'];
 
-            emp.forEach((element) => {
-                if(emp1.indexOf(element) === -1){
-                   result.push(element)
+            var newEmp = emp.filter((item,index)=>{
+                 if(emp.indexOf(item) === index){
+                    return item
                 }
-            });
-            emp1.forEach((element) =>{
-                if(emp.indexOf(element) === -1){
-                    result.push(element)
-                }
-            });
-            return document.write(result);
+            })
+            console.log(newEmp)
+           var newEmp1 = emp1.filter((item,index)=>{
+            if(emp1.indexOf(item) === index){
+                return item
+            }
+           })
+           console.log(newEmp1)
+           newEmp.forEach(element =>{
+            if(newEmp1.indexOf(element) === -1){
+                 result.push(element)
+            }
+           })
+           newEmp1.forEach(element => {
+            if(newEmp.indexOf(element) === -1){
+                result.push(element)
+            }
+           })
+          console.log(result)
         }
        
     </script>
