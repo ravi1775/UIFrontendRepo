@@ -1,0 +1,35 @@
+!\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <h1>welcome to Jasa script Coding</h1>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatum explicabo odio dolorum magni ut assumenda dignissimos nostrum quaerat molestias.</p>
+    
+    <input type="button" value="Enter your Name">
+    
+    <script>
+        
+        
+
+        function isPalindrome(num) {
+            let numString = num.toString();
+            let reverseString = numString.split('').reverse().join('');
+            return numString === reverseString;
+        }
+        
+        let num = parseInt(prompt("Enter a number: "));
+        if (isPalindrome(num)) {
+            console.log(num + " is a palindrome.");
+        } else {
+            console.log(num + " is not a palindrome.");
+        }
+
+       
+    </script>
+</body>
+</html>

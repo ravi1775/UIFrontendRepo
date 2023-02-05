@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to Jasa script Coding</h1>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatum explicabo odio dolorum magni ut assumenda dignissimos nostrum quaerat molestias.</p>
+    
+    <input type="button" value="Enter your Name" onclick="amit()">
+
+    <script>
+        function amit(){
+
+        /*Escape characters
+        single quote    \'
+        double quote    \\""
+        backslash       \\
+        */
+
+        let myname = 'Amit';
+        let salary = '200';
+
+        let www = `My name is ${myname} and my salary is ${salary}`;
+        
+        console.log(www);
+            
+        var str = 'I am AMit and I am learning Java Script';
+    
+        /*let str1 = new String('I am AMit and I am learning Java Script');
+        
+
+        if (str = str1) {
+        console.log('true');
+        }*/
+
+
+        console.log(str.startsWith("I"));
+        /*console.log(str1);*/
+        }
+        amit();
+        
+    </script>
+</body>
+</html>
+
+<!-- 1. Indexof
+2. startsWith
+3. lastindexof
+4. endswith
+5. match
+6. matchall 
+7. Search-->
