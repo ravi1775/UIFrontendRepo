@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number</title>
+</head>
+<body>
+      <script>
+      var num = 2222;
+      var tmp1 = 0;
+      var tmp2 = num;
+      var r;
+      while(num>0)
+      {
+        r = num % 10;                      
+        tmp1 = (tmp1 * 10 ) + r;
+        num = num / 10;
+        num=parseInt(num);
+      }
+      if(tmp1==tmp2)
+      {
+        document.write("Palindrome");
+      }
+      else
+      {
+        document.write("Not Palindrome");
+      }
+
+     /*
+      var num = 121;
+      var tmp1 = 0;
+      var tmp2 = num;
+      var r;
+      for(var num=121;num>0;)
+      {
+      r = num % 10;
+      tmp1 = (tmp1 * 10 ) + r;
+      num=parseInt(num/10);
+       
+      }
+      if(tmp1==tmp2)
+      {
+      console.log("Palindrome");
+      }
+      else
+      {
+      console.log("Not Palindrome");
+      }
+     */
+
+    </script>
+</body>
+</html>
