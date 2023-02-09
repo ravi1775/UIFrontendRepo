@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+</head>
+<style>
+    :root{
+        --texttheme:#ff0000;
+        --textsize:xx-large;
+        --imgpadding:20px;
+        
+    }
+    h1::before{
+        content: url("https://i.pinimg.com/564x/f7/75/7d/f7757d5977c6ade5ba352ec583fe8e40.jpg");
+        
+    }
+    p::first-letter {
+        color:var(--texttheme);
+        font-size: var(--textsize);
+     }
+
+    p::first-line {
+        color: #0000ff;
+        font-variant: small-caps;
+       
+    }
+    h1::after{
+    content:url("https://i.pinimg.com/564x/f7/75/7d/f7757d5977c6ade5ba352ec583fe8e40.jpg");
+    padding: var(--imgpadding);
+    border-bottom: 5px solid var(--texttheme);  
+    }
+    ::marker { 
+        color: var(--texttheme);
+        font-size: var(--textsize);
+    }
+    ::selection{
+        color: green;
+        background-color: purple;
+    }
+    
+</style>
+<body>
+    <h1>Pseudo elements</h1>
+   
+    <p>You can add a ::First-letter and ::First-line Pseudo-elements to add a special effect to first letter and first line.</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+      
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+
+</body>
+</html>

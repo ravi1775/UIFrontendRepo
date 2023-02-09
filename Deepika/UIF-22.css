@@ -1,0 +1,31 @@
+.box::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+
+}
+.box:hover:after {
+    width: 100%;
+  }
+
+p:first-child::first-line {
+    font-size: 120%;
+    font-weight: bold;
+    background-color: aquamarine;
+  }
+
+
+  li:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #009688;
+    transition: width .8s;
+  }
+  li:hover:after {
+    width: 100%;
+  }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        var array1=[1,2,3,10,11,11];
+var array2=[1,10,15,17,16,16];
+var result=[];
+
+function unmatchedArray(array1,array2){
+
+   array1.forEach(function(element) {
+    if(array2.indexOf(element) === -1) {
+      result.push(element);
+    }
+  });  
+array2.forEach(function(element) {
+    if(array1.indexOf(element) === -1) {
+      result.push(element);
+    }
+  });
+  return result;
+}
+console.log(unmatchedArray(array1,array2));
+
+    </script>
+</body>
+</html>

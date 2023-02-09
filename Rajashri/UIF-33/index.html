@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="divHeader" class="header">
+        <h1>Header</h1>
+    </div>
+    <div id="divMainNav" class="mainNav">
+        <a href="https://www.disneyplus.com" target="_blank">Disney+</a>
+        <a href="https://www.netflix.com" target="_blank">Netflix</a>
+        <a href="https://www.ubereats.com/ca" target="_blank">Uber Eats</a>
+    </div>
+   <div id="divRow">
+    <div id="divcolumn1" class="column">
+        <p>This is first column</p>
+    </div>
+    <div id="divcolumn2" class="column">
+        <p>This is second column</p>
+    </div>
+    <div id="divcolumn3" class="column">
+        <p>This is third column</p>
+    </div>
+   </div>
+  
+   <p id="demo"></p>
+   </div>
+
+   <script>
+    document.getElementById('divHeader').innerHTML = 'Hello javaScript';
+    document.getElementById('divHeader').style.color = 'blue';
+    document.getElementsByTagName("p")[0].innerHTML = "Hello World!";
+    const collection = document.getElementsByTagName("*");
+    let text = ""
+    for (let i = 0; i < collection.length; i++) {
+    text += collection[i].tagName + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+   </script>
+   
+</body>
+</html>

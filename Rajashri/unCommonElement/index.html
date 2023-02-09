@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncommon Element between two array</title>
+</head>
+<body>
+    <button onclick="unCommonElement()">Uncommon Element</button>
+    <script>
+        const unCommonElement = () =>{
+            var emp = ['Harry', 'Potter', 'John', 'Emily', 'David','Jorge'];
+            var emp1=['Emily', 'Max', 'John', 'David', 'Pitter', 'Pitter', 'Emily'];
+            var result = [];
+
+            emp.forEach((element) => {
+                if(emp1.indexOf(element) === -1){
+                   result.push(element)
+                }
+            });
+            emp1.forEach((element) =>{
+                if(emp.indexOf(element) === -1){
+                    result.push(element)
+                }
+            });
+            return document.write(result);
+        }
+       
+    </script>
+    
+</body>
+</html>

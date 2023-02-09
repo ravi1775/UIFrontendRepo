@@ -1,0 +1,114 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header
+{
+    background-color: aliceblue;
+    border: 1px solid black;
+    height:70px;
+    padding: 20px;
+    
+}
+ .logo h1
+{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+.menu ul li
+{
+    text-decoration: none;
+    color: aquamarine;
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-left: 50px;
+    padding: 0px;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.menu ul li a:hover
+{
+    color: lightskyblue;
+}
+.row
+{
+    height: 75vh;
+}
+.col1
+{
+    width: 25%;
+    height: 75vh;
+    float: left;
+}
+.col1 h1
+{
+    color: red;
+    margin: 20px;
+}
+.col1 ul
+{
+    
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.col2
+{
+    width: 35%;
+    height: 75vh;
+    float: left;
+    overflow: hidden;
+}
+.col2 dl
+{
+    margin-top: 100px;
+}
+.col2 dl span
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.col2 dl dd 
+{
+padding: 20px;
+}
+.col2 h1
+{
+    margin: 20px;
+    text-align: center;
+    color: brown;
+}
+.col3   
+{
+    width:40%;
+    height: 75vh;
+    float: right;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.col3 img
+{
+   height: 75vh;
+width: 100%;
+}
+footer
+{
+    align-items: center;
+}
+footer h1
+{
+    text-align: center;
+    margin-top: 30px;
+    color: burlywood;
+}
