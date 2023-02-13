@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https</title>
+</head>
+<body>
+    <button onclick="abc()">Click Me</button>
+    <script>
+        function abc(){
+            var xmlhttpRequest = new XMLHttpRequest();
+            xmlhttpRequest.onload = function(){
+                console.log(this.response);
+                console.log(this.responsedata)
+                // This section is used when you received the data from the server
+            }
+            xmlhttpRequest.open("GET", 'https://reqres.in/api/users/2', true);
+            xmlhttpRequest.send();
+        }
+    </script>
+</body>
+</html>
